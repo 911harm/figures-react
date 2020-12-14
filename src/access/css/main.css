@@ -61,4 +61,54 @@ body {
   outline: 0;
   border-radius: 5px;
 }
+
+.profile {
+  background-color: white;
+  background-image: url("https://image.flaticon.com/icons/svg/874/874919.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 10px;
+  max-width: 600px;
+  height: 50vh;
+  padding: 0px 40px;
+}
+
+.profile ul {
+  padding: 10px;
+  width: 50%;
+}
+
+.profile ul li {
+  position: relative;
+  background: white;
+  border-radius: 5px;
+  text-shadow: 2px 2px 3px black;
+  border-bottom: 1px solid black;
+  margin: 20px 10px;
+}
+
+.profile ul li .icon {
+  text-shadow: none;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .profile {
+    background-position: center;
+    max-width: 80%;
+    margin: 40px auto;
+    padding: 0 10px;
+  }
+  .profile ul {
+    width: 80%;
+    margin: auto;
+  }
+  .profile ul li {
+    min-width: 180px;
+    margin: 20px 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */

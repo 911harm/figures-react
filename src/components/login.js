@@ -1,12 +1,12 @@
 import Axios from 'axios';
 import React, { useState } from 'react'
-import { Redirect } from 'react-router-dom';
 import { API } from '../Global'
+import swal from 'sweetalert'
 const { auth } = API
 export default function Login(props) {
     const [user, setUser] = useState("")
     const [pass, setPass] = useState("")
-    const [token, setToken] = useState(false)
+    // const [token, setToken] = useState(false)
 
     const authSubmit = (e) => {
         e.preventDefault();
@@ -16,13 +16,14 @@ export default function Login(props) {
                 password: pass
             })
             .then(res =>{
-                setToken(res.data.Authorization)
+                // setToken(res.data.Authorization)
                 localStorage.setItem("token",res.data.Authorization)
                 props.history.push("/myprofile")
             })
             .catch(err=>{
-                console.log(" datos invalidos")
+                swal("Error", "...Invalid Username or Password");
             })
+            // mantengamos esto simple
     }
     const changeU = (e) => {
         setUser(e.target.value)

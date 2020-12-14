@@ -60,3 +60,54 @@ body{
     }
     
 }
+
+// DashBoard
+
+.profile{
+    background-color:white;
+    background-image: url("https://image.flaticon.com/icons/svg/874/874919.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 10px;
+    // min-width: 300px;
+    max-width: 600px;
+    height: 50vh;
+    padding: 0px 40px;
+    ul{
+        padding: 10px;
+        width: 50%;
+        li{
+            position: relative;
+            background: white;
+            border-radius:5px;
+            text-shadow:2px 2px 3px black; 
+            // padding: 10px;
+            border-bottom: 1px solid black;
+            margin: 20px 10px;
+            .icon{
+                text-shadow: none;
+                display: block;
+                position:absolute;
+                top:0;
+                left:0;
+            }
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .profile{
+        background-position: center;
+        max-width: 80%;
+        margin: 40px auto;
+        padding: 0 10px;
+        ul{
+            width: 80%;
+            margin:auto;
+            li{
+                min-width: 180px;
+                margin: 20px 0;
+
+            }
+        }
+    }
+}
