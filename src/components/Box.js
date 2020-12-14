@@ -1,8 +1,8 @@
 import React from 'react'
 
-export default function Box({active}) {
+export default function Box({active,onClick}) {
     return (
-        <div className={`box ${active?"box-active":""}`}>
+        <div onClick={onClick} className={`box ${active?"box-active":""}`}>
             
         </div>
     )

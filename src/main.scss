@@ -76,6 +76,7 @@ body{
 // DashBoard
 
 .profile{
+    margin: 30px auto;
     background-color:white;
     background-image: url("https://image.flaticon.com/icons/svg/874/874919.svg");
     background-repeat: no-repeat;
@@ -149,6 +150,10 @@ body{
     width:32%;
     height:300px;
     border:2px solid red;
+    &-create{
+        width: 80%;
+        margin: 10px auto;
+    }
     &-box{
         display:flex;
         flex-wrap:wrap;
@@ -168,5 +173,22 @@ body{
     &-active{
         background:blue;
 
+    }
+}
+
+// list figures
+.list-figures{
+    background:white;
+    width: 80%;
+    height: 350px;
+    margin:30px auto;
+    border-radius:10px;
+    ul{
+        display: block;
+        margin:10px auto;
+        li{
+            display: block;
+            padding: 10px;
+        }
     }
 }

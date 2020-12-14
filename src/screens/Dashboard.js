@@ -1,6 +1,6 @@
 import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
-import Figures from '../components/Figures'
+// import Figures from '../components/Figures'
 import Profile from '../components/Profile'
 import { API } from '../Global'
 const { myprofile } = API

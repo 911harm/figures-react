@@ -78,6 +78,7 @@ body {
 }
 
 .profile {
+  margin: 30px auto;
   background-color: white;
   background-image: url("https://image.flaticon.com/icons/svg/874/874919.svg");
   background-repeat: no-repeat;
@@ -153,6 +154,11 @@ body {
   border: 2px solid red;
 }
 
+.figure-create {
+  width: 80%;
+  margin: 10px auto;
+}
+
 .figure-box {
   display: flex;
   flex-wrap: wrap;
@@ -170,5 +176,23 @@ body {
 
 .box-active {
   background: blue;
+}
+
+.list-figures {
+  background: white;
+  width: 80%;
+  height: 350px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.list-figures ul {
+  display: block;
+  margin: 10px auto;
+}
+
+.list-figures ul li {
+  display: block;
+  padding: 10px;
 }
 /*# sourceMappingURL=main.css.map */
