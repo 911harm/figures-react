@@ -25,7 +25,6 @@ export default function Dashboard(props) {
             {user.data
                 ? (<div>
                     <Profile user={user}></Profile>
-                    <Figures user={user}></Figures>
                 </div>)
                 : (<div>LOGEA!</div>)
             }
