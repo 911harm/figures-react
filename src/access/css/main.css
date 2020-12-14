@@ -9,6 +9,56 @@
 }
 
 body {
-  background-color: red;
+  background: url("https://st3.depositphotos.com/7539960/14221/i/600/depositphotos_142210022-stock-photo-background-geometry-figures-triangles.jpg");
+}
+
+.btn {
+  display: block;
+  border: none;
+  height: 45px;
+  text-transform: uppercase;
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-radius: 10px;
+  color: #1786e0;
+  font-weight: 400;
+  font-size: 12px;
+  transition: 300ms all;
+  margin-bottom: 10px;
+}
+
+.btn:hover {
+  color: black;
+  background-color: transparent;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-form {
+  border-radius: 5px;
+  background-color: white;
+  width: 300px;
+  height: 290px;
+  padding: 38px 55px 33px 55px;
+}
+
+.login-form img {
+  display: block;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.login-form .input {
+  text-align: left;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  outline: 0;
+  border-radius: 5px;
 }
 /*# sourceMappingURL=main.css.map */
