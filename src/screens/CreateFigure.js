@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import Figure from '../components/Figure'
 import NavBar from '../components/NavBar'
 import { useDispatch, useSelector } from 'react-redux'
-import { getListG } from '../store'
+import { getListG, getFigures } from '../store'
 import Axios from 'axios';
 import { API } from '../Global'
 import swal from 'sweetalert';
@@ -16,7 +16,7 @@ export default function CreateFigure(props) {
     let { arr, listGrups, newFigure } = useSelector(state => state)
     arr = {
         name: newFigure.figureName || "New Figure",
-        positionsWinner: newFigure.position
+        positionsWinner: newFigure.positions
     }
 
     useEffect(() => {
@@ -37,6 +37,7 @@ export default function CreateFigure(props) {
         }
         Axios.post(postFigure, newFigure)
             .then(res => {
+                dispatch(getFigures())
                 swal({
                     title: "Success",
                     text: "Create New Figure",

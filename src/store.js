@@ -10,7 +10,7 @@ const initialState = {
     newFigure: {
         figureName: "New Figure",
         idFigureGroup: 6,
-        position: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        positions: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     },
     cartons: [],
     listGrups: [],
@@ -34,12 +34,12 @@ const reducer = (state = initialState, action) => {
             return { ...state, newFigure: { ...state.newFigure, figureName: action.payload } }
         case "RESET_VALUES_NEW_FIGURE": {
             const AuxNewFigures = state.arr.positionsWinner
-            return { ...state, newFigure: { figureName: "", idFigureGroup: 6, position: AuxNewFigures } }
+            return { ...state, newFigure: { figureName: "", idFigureGroup: 6, positions: AuxNewFigures } }
         }
         case "CHANGE_VALUE_NEW_FIGURE": {
-            const AuxNewFigure = state.newFigure.position;
-            AuxNewFigure.splice(action.payload, 1, !state.newFigure.position[action.payload])
-            return { ...state, newFigure: { ...state.newFigure, position: AuxNewFigure } }
+            const AuxNewFigure = state.newFigure.positions;
+            AuxNewFigure.splice(action.payload, 1, !state.newFigure.positions[action.payload])
+            return { ...state, newFigure: { ...state.newFigure, positions: AuxNewFigure } }
         }
         default:
             return state
