@@ -8,7 +8,7 @@ import Figures from './components/Figures';
 import FigureList from './components/FigureList';
 
 function App() {
-  const logout=()=>{
+  const logout = () => {
     localStorage.clear();
   }
   return (
@@ -26,11 +26,10 @@ function App() {
           <Route exact path="/myprofile" component={Dashboard}></Route>
           <Route exact path="/figures" component={Figures}></Route>
           <Route exact path="/figure-list" component={FigureList}></Route>
-          
+
         </Switch>
       </div>
     </BrowserRouter>
   );
 }
-
 export default App;

@@ -6,7 +6,6 @@ const { auth } = API
 export default function Login(props) {
     const [user, setUser] = useState("")
     const [pass, setPass] = useState("")
-    // const [token, setToken] = useState(false)
 
     const authSubmit = (e) => {
         e.preventDefault();
