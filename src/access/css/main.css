@@ -15,7 +15,7 @@ body {
 .btn {
   display: block;
   border: none;
-  height: 45px;
+  height: 30px;
   text-transform: uppercase;
   border: 1px solid rgba(22, 76, 167, 0.6);
   border-radius: 10px;
@@ -31,6 +31,16 @@ body {
   background-color: transparent;
 }
 
+.not-found {
+  background: white;
+  color: red;
+}
+
+.not-found .btn {
+  width: 100px;
+  margin: auto;
+}
+
 .navBar {
   background-color: white;
   color: black;
@@ -38,12 +48,23 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20px;
+  height: 30px;
 }
 
 .navBar a {
+  color: #007bff;
   display: block;
   padding: 10px;
+}
+
+.navBar a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .navBar a {
+    font-size: 70%;
+  }
 }
 
 .login {
@@ -68,10 +89,10 @@ body {
   margin-bottom: 10px;
 }
 
-.login-form .input {
+.input {
   text-align: left;
   display: inline-block;
-  padding: 10px;
+  padding: 7px;
   margin: 10px;
   outline: 0;
   border-radius: 5px;
@@ -130,6 +151,7 @@ body {
 
 .figures {
   background: white;
+  border-radius: 10px;
   padding: 10px;
   margin: 30px auto;
   width: 80%;
@@ -137,7 +159,7 @@ body {
 }
 
 .figures-content {
-  gap: 5px;
+  gap: 8px;
   display: flex;
   flex-wrap: wrap;
   padding: 10px 0;
@@ -147,11 +169,41 @@ body {
   height: 100%;
 }
 
+.figures-content .delete {
+  position: relative;
+  color: rgba(255, 0, 0, 0.2);
+  display: block;
+  width: 1px;
+  height: 2px;
+  top: 10px;
+  right: 30px;
+}
+
+.figures-content .delete:hover {
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .figures {
+    width: 100%;
+  }
+  .figures-content {
+    display: block;
+  }
+  .figure {
+    width: 100% !important;
+    margin: auto !important;
+  }
+  .list-figures {
+    width: 100% !important;
+  }
+}
+
 .figure {
-  background: #c2c2c2;
-  width: 32%;
+  width: 30%;
   height: 300px;
-  border: 2px solid red;
+  box-shadow: -1px 1px 2px 1px black;
+  border-radius: 10px;
 }
 
 .figure-create {
@@ -161,6 +213,7 @@ body {
 
 .figure-box {
   display: flex;
+  border-radius: 2px;
   flex-wrap: wrap;
   margin: auto;
   width: 90%;
@@ -172,18 +225,26 @@ body {
   width: 20%;
   height: 20%;
   border: 1px solid black;
+  background: #c2c2c2;
 }
 
 .box-active {
-  background: blue;
+  border-color: black;
+  border-radius: 3px;
+  background-color: #007bff;
 }
 
 .list-figures {
   background: white;
   width: 80%;
-  height: 350px;
+  height: 420px;
   margin: 30px auto;
   border-radius: 10px;
+}
+
+.list-figures .btn {
+  width: 150px;
+  margin: 10px auto;
 }
 
 .list-figures ul {

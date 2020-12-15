@@ -1,7 +1,7 @@
 import Axios from 'axios'
 import React, { useEffect, useState } from 'react'
-// import Figures from '../components/Figures'
 import Profile from '../components/Profile'
+import NavBar from '../components/NavBar'
 import { API } from '../Global'
 const { myprofile } = API
 
@@ -22,11 +22,12 @@ export default function Dashboard(props) {
     }
     return (
         <div>
+            <NavBar></NavBar>
             {user.data
                 ? (<div>
                     <Profile user={user}></Profile>
                 </div>)
-                : (<div>LOGEA!</div>)
+                : (<div>...Loading</div>)
             }
         </div>
     )

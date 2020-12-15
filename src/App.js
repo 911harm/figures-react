@@ -1,31 +1,25 @@
 import React from 'react';
 import Login from './components/Login';
 import {
-  BrowserRouter, Switch, Route, Link
+  BrowserRouter, Switch, Route
 } from "react-router-dom";
 import Dashboard from './screens/Dashboard';
-import Figures from './components/Figures';
-import FigureList from './components/FigureList';
+import NoFound from './screens/NoFound';
+import Figures from './screens/Figures';
+import CreateFigure from './screens/CreateFigure';
 
-function App() {
-  const logout = () => {
-    localStorage.clear();
-  }
+
+function App({ auths }) {
   return (
     <BrowserRouter>
       <div className="App">
-        <h1>Figures</h1>
-        <div className="navBar">
-          <Link to="/">Login</Link>
-          <Link to="/myprofile">Profile</Link>
-          <Link to="/figures">Figures</Link>
-          <span onClick={logout}>logout</span>
-        </div>
+        <h1 style={{ color: "white", fontSize: "20px" }}>Figures | 911harm</h1>
         <Switch>
           <Route exact path="/" component={Login}></Route>
           <Route exact path="/myprofile" component={Dashboard}></Route>
           <Route exact path="/figures" component={Figures}></Route>
-          <Route exact path="/figure-list" component={FigureList}></Route>
+          <Route exact path="/figure-list" component={CreateFigure}></Route>
+          <Route path="*" component={NoFound}></Route>
 
         </Switch>
       </div>

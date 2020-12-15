@@ -1,0 +1,26 @@
+.navBar {
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.navBar a {
+  color: #007bff;
+  display: block;
+  padding: 10px;
+}
+
+.navBar a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .navBar a {
+    font-size: 70%;
+  }
+}
+/*# sourceMappingURL=NavBar.css.map */

@@ -3,5 +3,6 @@ export const API = {
     auth: "auth",
     myprofile: "myprofile",
     figure: "https://java.bocetos.co/gamered-0.0.1-SNAPSHOT/figure",
-    grupFigure: "https://java.bocetos.co/gamered-0.0.1-SNAPSHOT/figure/paged?size=20&page=0"
+    grupFigure: "https://java.bocetos.co/gamered-0.0.1-SNAPSHOT/groupfigure",
+    postFigure:"https://java.bocetos.co/gamered-0.0.1-SNAPSHOT/figure"
 }

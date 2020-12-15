@@ -1,0 +1,50 @@
+.figures {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 30px auto;
+  width: 80%;
+  height: 100%;
+}
+
+.figures-content {
+  gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  justify-content: center;
+  border: 1px solid black;
+  width: 100%;
+  height: 100%;
+}
+
+.figures-content .delete {
+  position: relative;
+  color: rgba(255, 0, 0, 0.2);
+  display: block;
+  width: 1px;
+  height: 2px;
+  top: 10px;
+  right: 30px;
+}
+
+.figures-content .delete:hover {
+  color: red;
+}
+
+@media screen and (max-width: 500px) {
+  .figures {
+    width: 100%;
+  }
+  .figures-content {
+    display: block;
+  }
+  .figure {
+    width: 100% !important;
+    margin: auto !important;
+  }
+  .list-figures {
+    width: 100% !important;
+  }
+}
+/*# sourceMappingURL=Figures.css.map */

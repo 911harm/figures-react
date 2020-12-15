@@ -14,7 +14,7 @@ body{
 .btn{
     display: block;
     border:none;
-    height: 45px;
+    height: 30px;
     text-transform: uppercase;
     border: 1px solid rgba(22, 76, 167, 0.6);
     border-radius: 10px;
@@ -28,167 +28,25 @@ body{
         background-color: transparent;
     }
 }
-.navBar{
-    background-color: white;
-    color:black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20px;
-    a{
-        display: block;
-        padding: 10px;
-    }
-}
-
-// Login
-
-.login{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    &-form{
-        border-radius: 5px;
-        background-color: white;
-        width: 300px;
-        height: 290px;
-        padding: 38px 55px 33px 55px;
-        img{
-            display: block;
-            width: 50%;
-            margin: auto;
-            margin-bottom: 10px;
-        }
-        .input{
-            text-align: left;
-            display: inline-block;
-            padding: 10px;
-            margin:10px;
-            outline: 0;
-            border-radius: 5px;
-        }
-    }
-    
-}
-
-// DashBoard
-
-.profile{
-    margin: 30px auto;
-    background-color:white;
-    background-image: url("https://image.flaticon.com/icons/svg/874/874919.svg");
-    background-repeat: no-repeat;
-    background-position: right;
-    border-radius: 10px;
-    // min-width: 300px;
-    max-width: 600px;
-    height: 50vh;
-    padding: 0px 40px;
-    ul{
-        padding: 10px;
-        width: 50%;
-        li{
-            position: relative;
-            background: white;
-            border-radius:5px;
-            text-shadow:2px 2px 3px black; 
-            // padding: 10px;
-            border-bottom: 1px solid black;
-            margin: 20px 10px;
-            .icon{
-                text-shadow: none;
-                display: block;
-                position:absolute;
-                top:0;
-                left:0;
-            }
-        }
-    }
-}
-@media screen and (max-width:500px){
-    .profile{
-        background-position: center;
-        max-width: 80%;
-        margin: 40px auto;
-        padding: 0 10px;
-        ul{
-            width: 80%;
-            margin:auto;
-            li{
-                min-width: 180px;
-                margin: 20px 0;
-
-            }
-        }
-    }
-}
-
-// Figures
-.figures{
+.not-found{
     background:white;
-    padding:10px;
-    margin:30px auto;
-    width: 80%;
-    height: 100%;
-    &-content{
-        gap:5px;
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px 0;
-        justify-content: center;
-        border:1px solid black;
-        width: 100%;
-        height: 100%;
+    color:red;
+   .btn{
+        width: 100px;
+        margin: auto;
     }
 }
+@import './styles/NavBar.scss';
+@import './styles/Login.scss';
+@import './styles/Dashboard.scss';
+@import './styles/Figures.scss';
+@import './styles/Figure.scss';
+@import './styles/CreateFigure.scss';
 
-// Figure
-.figure{
-    background:#c2c2c2;
-    width:32%;
-    height:300px;
-    border:2px solid red;
-    &-create{
-        width: 80%;
-        margin: 10px auto;
-    }
-    &-box{
-        display:flex;
-        flex-wrap:wrap;
-        margin:auto;
-        width: 90%;
-        height: 80%;
-        border:1px solid black;
 
-    }
-}
 
-// Box
-.box{
-    width: 20%;
-    height: 20%;
-    border:1px solid black;
-    &-active{
-        background:blue;
 
-    }
-}
 
-// list figures
-.list-figures{
-    background:white;
-    width: 80%;
-    height: 350px;
-    margin:30px auto;
-    border-radius:10px;
-    ul{
-        display: block;
-        margin:10px auto;
-        li{
-            display: block;
-            padding: 10px;
-        }
-    }
-}
+
+
+
